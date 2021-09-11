@@ -14,12 +14,17 @@ int main()
     }
     else 
     {
+        if(number<0)
+        {
+            number = number*-1;
+        }
      int counter = 0;
      while(number>0)
      {
         number = number/10;
         counter++;
      }
+    
      cout<<"You Have Entered "<<counter<<" Digits"<<endl;
     }
 
